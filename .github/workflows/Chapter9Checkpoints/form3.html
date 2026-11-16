@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form | Chapter 9</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header><div class="header-inner"><h1>Contact Form</h1><p>Chapter 9 - Form example 3</p></div></header>
+<nav aria-label="Main navigation"><ul>
+    <li><a href="index.html">Checkpoint Answers</a></li>
+    <li><a href="form1.html">Customer Sign-Up</a></li>
+    <li><a href="form2.html">Survey Form</a></li>
+    <li><a href="form3.html">Contact Form</a></li>
+</ul></nav>
+<main>
+<section><h2>Contact Us</h2>
+<p>The labels tell users what each field is for. The fieldset and legend organize related information.</p>
+<form class="practice-form" action="#" method="get">
+    <fieldset>
+        <legend>Your Information</legend>
+        <div class="form-row"><label for="contactName">Name</label>
+            <input type="text" name="contactName" id="contactName" accesskey="n" tabindex="1" required></div>
+        <div class="form-row"><label for="contactEmail">Email Address</label>
+            <input type="email" name="contactEmail" id="contactEmail" accesskey="e" tabindex="2" required></div>
+    </fieldset>
+    <fieldset>
+        <legend>Your Message</legend>
+        <div class="form-row"><label for="topic">Topic</label>
+            <select name="topic" id="topic" tabindex="3">
+                <option value="question">Question</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select></div>
+        <div class="form-row"><label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" cols="40" tabindex="4" required></textarea></div>
+    </fieldset>
+    <button type="submit" tabindex="5">Send Message</button>
+    <button type="reset" tabindex="6">Clear Form</button>
+    <p class="status" role="status" aria-live="polite"></p>
+</form>
+<p class="small">The name field has accesskey="n" and the email field has accesskey="e". Shortcuts depend on the browser and operating system.</p>
+</section>
+</main>
+<footer>Web Application Development | Chapter 9: HTML Forms</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form | Chapter 9</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header><div class="header-inner"><h1>Survey Form</h1><p>Chapter 9 - Form example 2</p></div></header>
+<nav aria-label="Main navigation"><ul>
+    <li><a href="index.html">Checkpoint Answers</a></li>
+    <li><a href="form1.html">Customer Sign-Up</a></li>
+    <li><a href="form2.html">Survey Form</a></li>
+    <li><a href="form3.html">Contact Form</a></li>
+</ul></nav>
+<main>
+<section><h2>Simple Customer Survey</h2>
+<p>This form demonstrates a drop-down list with ten possible answers. The person can only choose one at a time.</p>
+<form class="practice-form" action="#" method="get">
+    <div class="form-row"><label for="surveyChoice">Which option would you choose?</label>
+    <select name="surveyChoice" id="surveyChoice" required>
+        <option value="">-- Choose one --</option>
+        <option value="choice1">Option 1</option>
+        <option value="choice2">Option 2</option>
+        <option value="choice3">Option 3</option>
+        <option value="choice4">Option 4</option>
+        <option value="choice5">Option 5</option>
+        <option value="choice6">Option 6</option>
+        <option value="choice7">Option 7</option>
+        <option value="choice8">Option 8</option>
+        <option value="choice9">Option 9</option>
+        <option value="choice10">Option 10</option>
+    </select></div>
+    <fieldset><legend>How did you hear about the store?</legend>
+        <div class="radio-row"><input type="radio" id="online" name="source" value="online" required>
+        <label for="online">Online</label></div>
+        <div class="radio-row"><input type="radio" id="friend" name="source" value="friend">
+        <label for="friend">Friend</label></div>
+        <div class="radio-row"><input type="radio" id="store" name="source" value="store">
+        <label for="store">In the store</label></div>
+    </fieldset>
+    <input type="submit" value="Submit Survey">
+    <input type="reset" value="Reset">
+    <p class="status" role="status" aria-live="polite"></p>
+</form>
+<p class="small">The radio buttons share the name "source". Each has a different value.</p>
+</section>
+</main>
+<footer>Web Application Development | Chapter 9: HTML Forms</footer>
+</body>
+</html>

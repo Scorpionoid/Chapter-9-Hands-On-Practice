@@ -1,0 +1,38 @@
+/* Chapter 9 - Forms and Checkpoints */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f7fa; color: #273244; font-family: Arial, Helvetica, sans-serif; line-height: 1.55; }
+header { background: #304960; color: white; padding: 24px 20px; }
+.header-inner, main, footer { max-width: 900px; margin: auto; }
+header h1 { margin: 0 0 5px; font-size: 1.8rem; }
+header p { margin: 0; color: #e1eaf1; }
+nav { background: #e3ecf4; padding: 12px 20px; }
+nav ul { max-width: 900px; margin: 0 auto; padding: 0; display: flex; gap: 15px; flex-wrap: wrap; list-style: none; }
+a { color: #185c89; }
+nav a { font-weight: bold; text-decoration: none; }
+nav a:hover, nav a:focus-visible { text-decoration: underline; }
+main { padding: 26px 20px 45px; }
+.intro { margin-top: 0; }
+section { background: white; padding: 20px 24px; margin: 0 0 18px; border: 1px solid #d8e1e9; border-radius: 7px; }
+h2 { margin-top: 0; font-size: 1.35rem; color: #2b4358; }
+h3 { font-size: 1rem; margin-bottom: 4px; }
+p { margin-top: 5px; }
+.question { margin-bottom: 18px; }
+.question:last-child { margin-bottom: 0; }
+.answer { margin-left: 0; }
+fieldset { border: 1px solid #9bacb9; border-radius: 5px; padding: 15px; margin-bottom: 18px; }
+legend { padding: 0 6px; font-weight: bold; }
+.form-row { margin: 0 0 14px; }
+.form-row > label { display: block; font-weight: bold; margin-bottom: 5px; }
+input[type="text"], input[type="email"], select, textarea { font: inherit; width: min(100%, 450px); border: 1px solid #8b9cac; border-radius: 4px; padding: 8px; background: #fff; }
+textarea { resize: vertical; }
+input[type="radio"] { margin-right: 7px; }
+.radio-row { margin: 7px 0; }
+button, input[type="submit"], input[type="reset"] { font: inherit; border: 1px solid #304960; border-radius: 4px; padding: 8px 16px; cursor: pointer; }
+button[type="submit"], input[type="submit"] { background: #304960; color: white; }
+button[type="reset"], input[type="reset"] { background: #fff; color: #304960; }
+button:hover, input[type="submit"]:hover { opacity: 0.9; }
+.note { background: #eef3f7; border-left: 4px solid #6885a0; padding: 10px 12px; }
+.status { min-height: 1.5em; color: #244e38; font-weight: bold; }
+.small { font-size: .9rem; color: #596675; }
+footer { padding: 0 20px 30px; font-size: .9rem; color: #5a6672; }
+@media (max-width: 520px) { section { padding: 16px; } header h1 { font-size: 1.5rem; } }
